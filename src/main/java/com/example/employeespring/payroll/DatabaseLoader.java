@@ -4,6 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+/**
+ * Temporary file just to load data on run since there is no database storage yet
+ */
 @Component
 public class DatabaseLoader implements CommandLineRunner {
 
@@ -15,7 +18,7 @@ public class DatabaseLoader implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
-        this.employeeRepository.save(new Employee("Eren", "Jaeger", "founding titan"));
+    public void run(String... args)  {
+        this.employeeRepository.save(new Employee("Aegon", "Targaryen", "Conqueror"));
     }
 }
