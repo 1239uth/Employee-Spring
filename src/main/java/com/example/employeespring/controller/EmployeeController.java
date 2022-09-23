@@ -1,7 +1,7 @@
 package com.example.employeespring.controller;
 
-import com.example.employeespring.payroll.Employee;
-import com.example.employeespring.payroll.EmployeeRepository;
+import com.example.employeespring.entity.Employee;
+import com.example.employeespring.gateway.EmployeeRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,11 +13,12 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api")
-public class APIController {
+public class EmployeeController {
     private final EmployeeRepository employeeRepository;
 
-    public APIController(EmployeeRepository employeeRepository) {
+    public EmployeeController(EmployeeRepository employeeRepository) {
         this.employeeRepository = employeeRepository;
     }
 

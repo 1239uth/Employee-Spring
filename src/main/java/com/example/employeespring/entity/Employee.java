@@ -1,4 +1,4 @@
-package com.example.employeespring.payroll;
+package com.example.employeespring.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

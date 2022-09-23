@@ -1,5 +1,6 @@
-package com.example.employeespring.payroll;
+package com.example.employeespring.gateway;
 
+import com.example.employeespring.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

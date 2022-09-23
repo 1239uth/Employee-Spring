@@ -31,3 +31,44 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+######## CREATE T3 APP ########
+# dependencies
+employee-frontend/node_modules
+employee-frontend/.pnp
+employee-frontend/.pnp.js
+
+# testing
+employee-frontend/coverage
+
+# database
+employee-frontend/prisma/db.sqlite
+employee-frontend/prisma/db.sqlite-journal
+
+# next.js
+employee-frontend/.next/
+employee-frontend/out/
+
+# production
+employee-frontend/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+employee-frontend/npm-debug.log*
+employee-frontend/yarn-debug.log*
+employee-frontend/yarn-error.log*
+employee-frontend/.pnpm-debug.log*
+
+# local env files
+employee-frontend/.env
+employee-frontend/.env*.local
+
+# vercel
+employee-frontend/.vercel
+
+# typescript
+*.tsbuildinfo
